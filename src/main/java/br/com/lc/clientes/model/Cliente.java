@@ -1,4 +1,4 @@
-package br.com.lc.clientes.model.entity;
+package br.com.lc.clientes.model;
 
 import java.time.LocalDate;
 import java.util.Objects;
@@ -36,7 +36,7 @@ public class Cliente {
 	private Integer id;
 	
 	@Column(nullable = false, length = 150)
-	@NotEmpty
+	@NotEmpty  
 	private String nome;
 	
 	@Column(nullable = false, length = 14)

@@ -4,7 +4,7 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
 
-import br.com.lc.clientes.model.entity.Cliente;
+import br.com.lc.clientes.model.Cliente;
 import br.com.lc.clientes.repository.ClienteRepository;
 
 @org.springframework.stereotype.Service

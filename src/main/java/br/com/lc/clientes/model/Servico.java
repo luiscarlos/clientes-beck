@@ -1,4 +1,4 @@
-package br.com.lc.clientes.model.entity;
+package br.com.lc.clientes.model;
 
 import java.math.BigDecimal;
 

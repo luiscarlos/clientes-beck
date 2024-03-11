@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
 
-import br.com.lc.clientes.model.entity.Cliente;
+import br.com.lc.clientes.model.Cliente;
 import br.com.lc.clientes.repository.ClienteRepository;
 import br.com.lc.clientes.service.ClienteService;
 
