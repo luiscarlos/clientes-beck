@@ -3,6 +3,7 @@ package br.com.lc.clientes.model.entity;
 import java.time.LocalDate;
 import java.util.Objects;
 
+import org.hibernate.validator.constraints.br.CPF;
 import org.springframework.boot.autoconfigure.web.WebProperties.Resources.Chain.Strategy;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
@@ -12,6 +13,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -33,9 +36,12 @@ public class Cliente {
 	private Integer id;
 	
 	@Column(nullable = false, length = 150)
+	@NotEmpty
 	private String nome;
 	
-	@Column(nullable = false, length = 11)
+	@Column(nullable = false, length = 14)
+	@NotNull
+	@CPF
 	private String cpf;
 	
 	@Column(name = "data_cadastro", updatable = false)
